@@ -1,0 +1,5 @@
+ウィンドウの複製　ctrl + N
+
+
+Brackets
+ctrl + d ： カーソルがある行の複製　

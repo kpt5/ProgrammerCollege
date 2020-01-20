@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- web.xml は画面を表示する為の設定ファイル。 -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+  http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  id="WebApp_ID" version="3.1">
+
+  <!-- display-name ＝ プロジェクト名 -->
+  <!-- ~\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps にあるフォルダ名のことを指す -->
+  <display-name>hello_jsp</display-name>
+
+  <welcome-file-list>
+    <!-- <welcome-file>タグにプログラムしたファイルが、上から順に検索され、 -->
+    <!-- 該当ファイルが見つかったら画面に表示される。 -->
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

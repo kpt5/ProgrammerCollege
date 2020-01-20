@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- web.xml は画面を表示する為の設定ファイル。 -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+   http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+  <!-- display-name ＝ プロジェクト名 -->
+  <!-- ~\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps にあるフォルダ名のことを指す -->
+  <display-name>hello_servlet</display-name>
+
+  <welcome-file-list>
+    <!-- <welcome-file>タグにプログラムしたファイルが、上から順に検索され、 -->
+    <!-- 該当ファイルが見つかったら画面に表示される。 -->
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>Hello</servlet-name>
+    <!--  <servlet-class>はサーブレットクラス名（Java ファイル名） -->
+    <servlet-class>HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <!--  http://localhost:8080/xxxxx/xxxxx の/xxxxx/xxxxx の部分を入力 -->
+    <!-- <url-pattern>/hello_servlet/HelloServlet1</url-pattern> -->
+    <url-pattern>/aa</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/hello_servlet/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <!-- Inquiry： 問い合わせ -->
+    <servlet-name>Inquiry</servlet-name>
+    <servlet-class>InquiryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Inquiry</servlet-name>
+    <url-pattern>/hello_servlet/InquiryServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/hello_servlet/TestServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MySQL</servlet-name>
+    <servlet-class>MySQLServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MySQL</servlet-name>
+    <url-pattern>/hello_servlet/MySQLServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

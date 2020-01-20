@@ -1,0 +1,347 @@
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | taro      | 123      |
+|       2 | jiro      | 456      |
+|       3 | hanako    | 789      |
++---------+-----------+----------+
+
+
+dao.select("taro", "123");
+dao.select("taro", "123");
+taro
+123
+
+dao.selectAll();
+taro
+123
+jiro
+456
+hanako
+789
+
+dao.selectByName("taro");
+taro
+123
+該当するデータはありませんでした
+
+dao.selectByPassword("123");
+taro
+123
+
+dao.updateUserNameByUserName("taro", "saburo");
+public void updateUserNameByUserName(String oldName, String newName)
+1件更新されました
+
+dao.insert(4, "shiro", "012");
+public void insert(int user_id, String name, String password)
+1件登録されました
+
+dao.delete("jiro");
+1件削除されました
+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+
+dao.select("taro", "123");
+public void select(String name, String password)
+該当するデータはありませんでした
+
+dao.selectAll();
+saburo
+123
+hanako
+789
+shiro
+012
+
+dao.selectByName("taro");
+
+dao.selectByPassword("123");
+saburo
+123
+
+dao.updateUserNameByUserName("taro", "saburo");
+public void updateUserNameByUserName(String oldName, String newName)
+該当するデータがありませんでした
+
+dao.insert(4, "shiro", "012");
+public void insert(int user_id, String name, String password)
+1件登録されました
+
+dao.delete("jiro");
+該当するデータがありませんでした
+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+
+dao.select("taro", "123");
+public void select(String name, String password)
+該当するデータはありませんでした
+
+dao.selectAll();
+saburo
+123
+hanako
+789
+shiro
+012
+shiro
+012
+
+dao.selectByName("taro");
+
+dao.selectByPassword("123");
+saburo
+123
+
+dao.updateUserNameByUserName("taro", "saburo");
+public void updateUserNameByUserName(String oldName, String newName)
+該当するデータがありませんでした
+
+dao.insert(4, "shiro", "012");
+public void insert(int user_id, String name, String password)
+1件登録されました
+
+dao.delete("jiro");
+該当するデータがありませんでした
+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+
+
+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | taro      | 123      |
+|       2 | jiro      | 456      |
+|       3 | hanako    | 789      |
++---------+-----------+----------+
+
+
+dao.select("taro", "123");
+taro
+123
+
+dao.selectAll();
+taro
+123
+jiro
+456
+hanako
+789
+
+dao.selectByName("taro");
+taro
+123
+
+dao.selectByPassword("123");
+taro
+123
+
+dao.updateUserNameByUserName("taro", "saburo");
+public void updateUserNameByUserName(String oldName, String newName)
+1件更新されました
+
+dao.insert(4, "shiro", "012");
+public void insert(int user_id, String name, String password)
+1件登録されました
+
+dao.delete("jiro");
+1件削除されました
+
+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+dao.select("taro", "123");
+
+dao.selectAll();
+saburo
+123
+hanako
+789
+shiro
+012
+
+dao.selectByName("taro");
+
+dao.selectByPassword("123");
+saburo
+123
+
+dao.updateUserNameByUserName("taro", "saburo");
+該当するデータはありませんでした
+
+dao.insert(4, "shiro", "012");
+1件登録されました
+
+dao.delete("jiro");.
+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+
+dao.select("taro", "123");
+
+dao.selectAll();
+saburo
+123
+hanako
+789
+shiro
+012
+shiro
+012
+
+dao.selectByName("taro");
+
+dao.selectByPassword("123");
+saburo
+123
+
+dao.updateUserNameByUserName("taro", "saburo");
+該当するデータはありませんでした
+
+dao.insert(4, "shiro", "012");
+1件登録されました
+
+dao.delete("jiro");
+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+MariaDB [testdb]> select * from test_table;
++---------+-----------+----------+
+| user_id | user_name | password |
++---------+-----------+----------+
+|       1 | saburo    | 123      |
+|       3 | hanako    | 789      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
+|       4 | shiro     | 012      |
++---------+-----------+----------+
+
+
+
+
+taro
+123
+
+taro
+123
+jiro
+456
+hanako
+789
+
+taro
+123
+
+taro
+123
+
+1件更新されました
+1件登録されました
+1件削除されました
+
+
+
+
+
+saburo
+123
+hanako
+789
+shiro
+012
+saburo
+123
+該当するデータはありませんでした
+1件登録されました
+saburo
+123
+hanako
+789
+shiro
+012
+shiro
+012
+saburo
+123
+該当するデータはありませんでした
+1件登録されました   
