@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*
+textarea フォントサイズ
+Window版のChromeのみ、プレースホルダーの文字が小さくなる
+font-familyプロパティを設定せず、フォントサイズのみを「100%」から「16px」に修正してみると、フォントサイズ自体は正常に戻りますが、フォントの種類が自動的に別のものになってしまいます。
+単にフォントサイズのみを別の単位で指定しなおしても解決できない。
+そのため、body要素など大元で指定しているfont-familyプロパティと全く同じ指定を、textarea要素に対しても適用することで解決します。
+*/
+
+input,
+select,
+textarea {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+  /*  font-size: inherit;*/
+  /*  font-size: 100%;*/
+}
+
+.line1 {
+  width: 300px;
+}
+
+select {
+  padding: 1px 5px 0;
+}
+
+

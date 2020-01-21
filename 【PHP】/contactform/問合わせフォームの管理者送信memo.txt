@@ -1,0 +1,17 @@
+問合わせフォームの管理者送信
+
+index.html
+(問い合わせ画面)
+
+mail_confirm.php
+(入力内容確認画面)
+
+
+insert.php
+(SQL文を記述)
+
+
+https://kuroeveryday.blogspot.com/2017/04/css-styling-html-forms.html
+
+http://localhost/r_itagaki/191113/contactform/contactform/insert.php
+http://localhost/r_itagaki/191113/contactform/4each_keijiban/index.php

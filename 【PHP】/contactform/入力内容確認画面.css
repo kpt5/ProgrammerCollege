@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.back {
+  float: left;
+}
+
+.register {
+  margin-left: 15px;
+  background-color: orange;
+}
