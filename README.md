@@ -1,4 +1,4 @@
-# プログラマカレッジでの制作物（ソース）
+# 【研修課題@プログラマカレッジ】Webアプリ・プログラム
 <br>　・【 Java 】オブジェクト指向　⇒　./オブジェクト指向/Object-Oriented_Programming
 <br>　・【 Java 】継承　⇒　./オブジェクト指向/Inheritance
 <br>　・【 Java 】カプセル化　⇒　./オブジェクト指向/Encapsulation
